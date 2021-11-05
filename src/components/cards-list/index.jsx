@@ -7,8 +7,8 @@ export const CardsList = ({ cardsList }) => {
 
   const handleSuitFilter = (e) => {
     console.log(e.target.id);
-    if ((e.target.id = suitFilter)) {
-      setSuitFilter(true);
+    if (e.target.id === suitFilter) {
+      setSuitFilter(false);
       e.target.checked = false;
     } else {
       setSuitFilter(e.target.id);

@@ -20,7 +20,7 @@ export const App = () => {
   };
 
   const handleShowDeck = () => {
-    setShowDeck(true);
+    setShowDeck(!showDeck);
   };
 
   useEffect(() => {
@@ -30,8 +30,6 @@ export const App = () => {
   useEffect(() => {
     if (deck) handleCardsRequest(deck);
   }, [deck]);
-
-  console.log(cardsList)
 
   return (
     <div className="main-container">
